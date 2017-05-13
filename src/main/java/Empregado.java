@@ -10,8 +10,29 @@ public class Empregado {
     private int salario;
     private double comissao = 0;
     private int descontos = 0;
-
+    boolean sindicato = false;
+    private int hora_entrada=0;
+    private int hora_saida;
     private ArrayList<Integer> dias_receber = new ArrayList<Integer>();
+
+
+    public int getHora_entrada() {
+        return hora_entrada;
+    }
+
+    public void setHora_entrada(int hora_entrada) {
+        this.hora_entrada = hora_entrada;
+    }
+
+    public int getHora_saida() {
+        return hora_saida;
+    }
+
+    public void setHora_saida(int hora_saida) {
+        this.hora_saida = hora_saida;
+    }
+
+
 
     public Ponto ponto = new Ponto();
 
